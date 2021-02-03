@@ -27,9 +27,24 @@ body{
 /* pie de pagina */
 footer{
 
-    height: 100px;
+    height: 150px;
     background-color: #f0B429;
    
+}
+
+.piepagina{
+    margin-left: 230px;
+    padding-top: 20px;
+}
+
+.iconfooter{
+    display: block;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    padding: 22px; 
 }
 
 
@@ -43,10 +58,8 @@ footer{
 
 }
 
-
 .imgheader{
-   padding-right: 20px;
-   
+   padding-right: 20px; 
 }
 
 nav{   
@@ -54,7 +67,6 @@ nav{
 }
 
 nav ul {
-   
     padding-left: 30px;
     margin: 0;
     list-style: none;
@@ -72,11 +84,16 @@ nav a:hover {
 }
 
 nav ul li ul {
-    display: none;
+    display: block;
 }
 
-nav ul li a:hover + ul, nav ul li ul:hover {
+/* nav ul li a:hover + ul, nav ul li ul:hover {
     display: block;
+} */
+
+.activada{
+    background-color: gray;
+  
 }
 
 /* informacion central */
@@ -101,7 +118,20 @@ nav ul li a:hover + ul, nav ul li ul:hover {
     width: 20%;
 }
 
+
 aside{
-    background-color: yellow;
+    /* display: inline-block; */
+    float: right;
 }
+
+.scroll {
+    width: 300px;
+    height: 800px;
+     background: gray;
+    overflow: scroll;
+ }
+
+
+ 
+ 
 
