@@ -131,7 +131,35 @@ aside{
     overflow: scroll;
  }
 
+/*style GIT */
 
- 
+.comangit ul {
+    list-style-type:none;
+    padding: 0;
+    padding-top: 10px;
+
+
+}
+
+.scrollgit{
+    width: 260px;
+    height: 1700px;
+     background: gray;
+    overflow: scroll;
+}
+
+.scrollgithub{
+    width: 260px;
+    height: 1100px;
+     background: gray;
+    overflow: scroll;
+}
+
+.scrollvideo{
+    width: 260px;
+    height: 2000px;
+     background: gray;
+    overflow: scroll;
+}
  
 
