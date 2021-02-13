@@ -129,6 +129,7 @@ aside{
     height: 800px;
      background: gray;
     overflow: scroll;
+    
  }
 
 /*style GIT */
@@ -150,14 +151,14 @@ aside{
 
 .scrollgithub{
     width: 260px;
-    height: 1100px;
+    height: 1400px;
      background: gray;
     overflow: scroll;
 }
 
 .scrollvideo{
     width: 260px;
-    height: 2000px;
+    height: 2800px;
      background: gray;
     overflow: scroll;
 }
