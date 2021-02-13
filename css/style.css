@@ -144,14 +144,14 @@ aside{
 
 .scrollgit{
     width: 260px;
-    height: 1700px;
+    height: 1800px;
      background: gray;
     overflow: scroll;
 }
 
 .scrollgithub{
     width: 260px;
-    height: 1400px;
+    height: 1200px;
      background: gray;
     overflow: scroll;
 }
