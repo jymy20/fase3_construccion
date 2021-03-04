@@ -11,7 +11,9 @@
 
 <body>
 
-    <div class="barralateral">
+    <div class="barralateral" id="menu">
+
+        <button class="btnmenu" onclick="FuntionMenu()">X</button>
 
         <header>
             <figure>
@@ -38,7 +40,12 @@
                         <li><a href="documentos.html">Documentos</a></li>
                     </ul>
                 </li>
-                <li><a href="autoevaluacion.html">Autoevaluación</a></li>
+                <li><a>Autoevaluación</a>
+                    <ul>
+                        <li><a href="actividad1.html">Actividad 1</a></li>
+                        <li><a href="actividad2.html">Actividad 2</a></li>
+                    </ul>
+                </li>
                 <li><a href="autor.html">Autor</a></li>
 
             </ul>
@@ -46,6 +53,7 @@
     </div>
 
     <header id="main-header" class="cabecera">
+        <button onclick="FuntionMenu()">Menu</button>
         <div class="titulo-cabecera">
             <h1>Qué es GIT</h1>
             <label>sitio web OVI </label>
@@ -55,168 +63,169 @@
 
     <table>
         <tr>
-            <td class="columna1"></td>
-            <td class="columna">
+            <td class="col1"></td>
+            <td class="col2">
                 <section>
                     <article>
                         <h2 class="titulos">Definición</h2>
-                        <p class="parrafo">
-                            Git es un sistema de control de versiones distribuido; esto quiere decir que mantiene una
-                            copia local del repositorio completo.
-                        </p>
-                        <p class="parrafo">
-                            Al disponer de un repositorio local, puedes hacer commit (enviar cambios al sistema de
-                            control de versiones) en local, sin necesidad de estar conectado a Internet o cualquier otra
-                            red.
-                        </p>
-                        <p class="parrafo">
-                            Git permite realizar un seguimiento de los cambios realizados en un proyecto a lo largo del
-                            tiempo y funciona registrando los cambios que realiza en un proyecto, almacenando esos
-                            cambios y luego permitiéndole consultarlos según sea necesario.
-                            Git tiene tres estados principales en los que se pueden encontrar tus archivos: confirmado
-                            (committed), modificado (modified), y preparado (staged).
-                            Confirmado significa que los datos están almacenados de manera segura en tu base de datos
-                            local.
-                        </p>
-                        <p class="parrafo">
-                            Modificado significa que has modificado el archivo pero todavía no lo has confirmado a tu
-                            base de datos.
-                        </p>
-                        <p class="parrafo">
-                            Preparado significa que has marcado un archivo modificado en su versión actual para que vaya
-                            en tu próxima confirmación.
-                        </p>
-                        <p class="parrafo">
-                            También consta de tres partes:
-                            Un directorio de trabajo (Working Directory): donde harás todo el trabajo: crear, editar,
-                            eliminar y organizar archivos
-                            Un área de preparación (Staging Area): donde se enumerarán los cambios que se realicen en el
-                            directorio de trabajo
-                            Un repositorio (Git Directory — Repository): donde Git almacena permanentemente esos cambios
-                            como diferentes versiones del proyecto
-                            El flujo de trabajo de Git consiste en editar archivos en el directorio de trabajo, agregar
-                            archivos al área de preparación y guardar los cambios en un repositorio.
-                            Comando.
-                        </p>
-                         
-                        
-                        <h2 class="titulos">Algunos Comandos</h2>
+                        <!-- <div class="alinear"> -->
+                        <div class="parrafo">
+                            <p>
+                                Git es un sistema de control de versiones distribuido;esto quiere decir que mantiene una
+                                copia local del repositorio completo.
+                            </p>
 
-                        <ul class="comangit">
-                            <li>
-                                <h4>init</h4>
-                                <p>
-                                    Con éste comando se inicializa un repositorio, es decir, con este comando le decimos
-                                    a Git
-                                    que haga seguimiento de todo lo que hagamos en la carpeta actual.
-                                </p>
-                            </li>
-                            <li>
-                                <h4>git add</h4>
-                                <p>
-                                    Con éste comando añade archivos modificados, es decir, vendría a ser el comando que
-                                    añade el articulo a la caja o sobre. Recibe un parametro, este parametro es el path
-                                    del
-                                    archivo a añadir.
-                                </p>
-                            </li>
-                            <li>
-                                <h4> commit --message=""</h4>
-                                <p>
-                                    Con éste comando se sella el sobre con el nombre del usuario, correo y mensaje
-                                    principal
-                                    de los cambios hechos.
-                                </p>
-                            </li>
-                            <li>
 
-                                <h4> remote add origin url_del_repositorio.git</h4>
-                                <p>
-                                    Este comando solo se usa una vez, solo cuando el repositorio está recién creado,
-                                    despues
-                                    de la primera vez que se usa, no es necesario volverlo a utilizar.
-                                </p>
-                            </li>
-                            <li>
-                                <h4>push -u origin master</h4>
-                                <p>
-                                    Este comando tal y como se pasó anteriormente solo se pasa una vez, despues de la
-                                    primera vez solo será necesario hacer uso de git push sin parametros.
-                                </p>
-                            </li>
-                            <li>
-                                <h4>diff</h4> 
-                                <p>
+                            <p>
+                                Al disponer de un repositorio local, puedes hacer commit (enviar cambios al sistema de
+                                control de versiones) en local, sin necesidad de estar conectado a Internet o cualquier
+                                otra
+                                red.
+                            </p>
+                            <p>
+                                Git permite realizar un seguimiento de los cambios realizados en un proyecto a lo largo
+                                del
+                                tiempo y funciona registrando los cambios que realiza en un proyecto, almacenando esos
+                                cambios y luego permitiéndole consultarlos según sea necesario.
+                                Git tiene tres estados principales en los que se pueden encontrar tus archivos:
+                                confirmado
+                                (committed), modificado (modified), y preparado (staged).
+                                Confirmado significa que los datos están almacenados de manera segura en tu base de
+                                datos
+                                local.
+                            </p>
+                            <p>
+                                Modificado significa que has modificado el archivo pero todavía no lo has confirmado a
+                                tu
+                                base de datos.
+                            </p>
+                            <p>
+                                Preparado significa que has marcado un archivo modificado en su versión actual para que
+                                vaya
+                                en tu próxima confirmación.
+                            </p>
+                            <p>
+                                También consta de tres partes:
+                                Un directorio de trabajo (Working Directory): donde harás todo el trabajo: crear,
+                                editar,
+                                eliminar y organizar archivos
+                                Un área de preparación (Staging Area): donde se enumerarán los cambios que se realicen
+                                en el
+                                directorio de trabajo
+                                Un repositorio (Git Directory — Repository): donde Git almacena permanentemente esos
+                                cambios
+                                como diferentes versiones del proyecto
+                                El flujo de trabajo de Git consiste en editar archivos en el directorio de trabajo,
+                                agregar
+                                archivos al área de preparación y guardar los cambios en un repositorio.
+                                Comando.
+                            </p>
+
+
+                            <h2 class="titulos">Algunos Comandos</h2>
+
+
+                            <h4>init</h4>
+                            <p>
+                                Con éste comando se inicializa un repositorio, es decir, con este comando le decimos
+                                a Git
+                                que haga seguimiento de todo lo que hagamos en la carpeta actual.
+                            </p>
+
+                            <h4>git add</h4>
+                            <p>
+                                Con éste comando añade archivos modificados, es decir, vendría a ser el comando que
+                                añade el articulo a la caja o sobre. Recibe un parametro, este parametro es el path
+                                del
+                                archivo a añadir.
+                            </p>
+
+                            <h4> commit --message=""</h4>
+                            <p>
+                                Con éste comando se sella el sobre con el nombre del usuario, correo y mensaje
+                                principal
+                                de los cambios hechos.
+                            </p>
+
+                            <h4> remote add origin url_del_repositorio.git</h4>
+                            <p>
+                                Este comando solo se usa una vez, solo cuando el repositorio está recién creado,
+                                despues
+                                de la primera vez que se usa, no es necesario volverlo a utilizar.
+                            </p>
+
+                            <h4>push -u origin master</h4>
+                            <p>
+                                Este comando tal y como se pasó anteriormente solo se pasa una vez, despues de la
+                                primera vez solo será necesario hacer uso de git push sin parametros.
+                            </p>
+
+                            <h4>diff</h4>
+                            <p>
                                 Este comando nos muestra los cambios linea por linea que tienen los archivos, recibe un
                                 parametro, el parametro que se le pasa es el path del archivo del que queremos ver los
                                 cambios provicionales.
-                                </p>
-                            </li>
-                            <li>
-                                <h4> status</h4>
-                                <p>
+                            </p>
+
+                            <h4> status</h4>
+                            <p>
                                 Este comando mustra el estado actual del repositorio local, es decir, no dice que
                                 archivos han sido modificados, agregados o eliminados.
-                                </p>
-                                </li>
-                                <li>
-                                    <h4> reset</h4>
-                                    <p>
-                                        Este comando vuelve a dejar los archivos sin seguimiento, revierte el efecto del
-                                        comando
-                                        git add.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h4> log </h4>
-                                    <p>
-                                        Con este comando se muestran los commits que se han hecho, tanto locales, como
-                                        los del
-                                        repositorio en produccion.
-                                    </p>
-                                </li>
-                                <li>
-                                <h4>git show</h4>
-                                <p>
-                                    Este comando recibe un parametro, en este parametro se tiene que especificar el hash
-                                    o
-                                    numero unico de commit, la salida de este comando muestra los cambios asociados a un
-                                    commit.
-                                </p>
-                            </li>
-                            <li>
-                                <h4>git checkout</h4>
-                                <p>
-                                    git checkout tiene que ejecutarse con un parametro, este parametro especifica el
-                                    path de
-                                    un archivo, cuando este parametro es ejecutado, lo que hace es quitar las
-                                    modificaciones
-                                    de los archivos especificados. Este comando tiene muchos usos a parte del
-                                    anteriormente
-                                    descrito.
-                                </p>
-                            </li>
-                        </ul>
+                            </p>
 
-                        <h3><a
-                                href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git">Documento
-                                Instalación</a>
-                        </h3>
+                            <h4> reset</h4>
+                            <p>
+                                Este comando vuelve a dejar los archivos sin seguimiento, revierte el efecto del
+                                comando
+                                git add.
+                            </p>
 
-                        <pre>
- Bibliografía: Git-scm.com. 2021. Git - Instalación de Git. [online] 
- Recuperado de: 
- https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git 
- [Accessed 13 February 2021].
+                            <h4> log </h4>
+                            <p>
+                                Con este comando se muestran los commits que se han hecho, tanto locales, como
+                                los del
+                                repositorio en produccion.
+                            </p>
 
-                        </pre>
+                            <h4>git show</h4>
+                            <p>
+                                Este comando recibe un parametro, en este parametro se tiene que especificar el hash
+                                o
+                                numero unico de commit, la salida de este comando muestra los cambios asociados a un
+                                commit.
+                            </p>
+
+                            <h4>git checkout</h4>
+                            <p>
+                                git checkout tiene que ejecutarse con un parametro, este parametro especifica el
+                                path de
+                                un archivo, cuando este parametro es ejecutado, lo que hace es quitar las
+                                modificaciones
+                                de los archivos especificados. Este comando tiene muchos usos a parte del
+                                anteriormente
+                                descrito.
+                            </p>
+
+
+                            <h3><a
+                                    href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git">Documento
+                                    Instalación</a>
+                            </h3>
+
+                            <p>
+                                Bibliografía: Git-scm.com. 2021. Git - Instalación de Git. [online]
+                                Recuperado de:
+                                https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git
+                                [Accessed 13 February 2021].
+
+                            </p>
+                        </div>
+
+
+                    </article>
                 </section>
-
-                </article>
-                </section>
-
             </td>
-            <td class="columna1">
+            <td class="col3">
                 <aside class="scrollgit">
 
                     <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by
@@ -255,6 +264,7 @@
             </address>
         </div>
     </footer>
+    <script src ="./js/mijs.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,9 @@
 
 <body>
 
-    <div class="barralateral">
+    <div class="barralateral" id="menu">
+
+        <button class="btnmenu" onclick="FuntionMenu()">X</button>
 
         <header>
             <figure>
@@ -38,7 +40,12 @@
                         <li><a href="documentos.html">Documentos</a></li>
                     </ul>
                 </li>
-                <li><a class="activada" href="autoevaluacion.html">Autoevaluación</a></li>
+                <li><a>Autoevaluación</a>
+                    <ul>
+                        <li><a class="activada" href="actividad1.html">Actividad 1</a></li>
+                        <li><a href="actividad2.html">Actividad 2</a></li>
+                    </ul>
+                </li>
                 <li><a href="autor.html">Autor</a></li>
 
             </ul>
@@ -46,8 +53,9 @@
     </div>
 
     <header id="main-header" class="cabecera">
+        <button onclick="FuntionMenu()">Menu</button>
         <div class="titulo-cabecera">
-            <h1>Git Y GitHub</h1>
+            <h1>Actividad 1</h1>
             <label>sitio web OVI </label>
         </div>
 
@@ -55,16 +63,18 @@
 
     <table>
         <tr>
-            <td class="columna1"></td>
-            <td class="columna">
+            <td class="col1"></td>
+            <td class="col2">
+                <iframe class="activity" frameborder= "0"
+                    src="https://es.educaplay.com/juego/8424486-git_y_github.html"></iframe>
+            </td>
+            <td class="col3">
+                <aside class="scrollactividad">
 
+                    <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by
+                        UniversidadUNAD</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-                    </td>
-            <td class="columna1">
-                <aside class="scroll">
-                
-                    <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-             
                 </aside>
             </td>
         </tr>
@@ -96,6 +106,7 @@
             </address>
         </div>
     </footer>
+    <script src ="./js/mijs.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,9 @@
 
 <body>
 
-    <div class="barralateral">
+    <div class="barralateral" id="menu">
+
+        <button class="btnmenu" onclick="FuntionMenu()">X</button>
 
         <header>
             <figure>
@@ -38,7 +40,12 @@
                         <li><a href="documentos.html">Documentos</a></li>
                     </ul>
                 </li>
-                <li><a href="autoevaluacion.html">Autoevaluación</a></li>
+                <li><a>Autoevaluación</a>
+                    <ul>
+                        <li><a href="actividad1.html">Actividad 1</a></li>
+                        <li><a href="actividad2.html">Actividad 2</a></li>
+                    </ul>
+                </li>
                 <li><a href="autor.html">Autor</a></li>
 
             </ul>
@@ -46,6 +53,7 @@
     </div>
 
     <header id="main-header" class="cabecera">
+        <button onclick="FuntionMenu()">Menu</button>
         <div class="titulo-cabecera">
             <h1>GitHub</h1>
             <label>sitio web OVI </label>
@@ -55,8 +63,8 @@
 
     <table>
         <tr>
-            <td class="columna1"></td>
-            <td class="columna">
+            <td class="col1"></td>
+            <td class="col2">
                 <section>
                     <article>
                         <h2 class="titulos">¿Qué es Github?</h2>
@@ -74,40 +82,40 @@
                             Github nos ofrece la opción de crear un repositorio vacío, recomendable cuando vamos a
                             iniciar un nuevo desarrollo, o la opción de importar un proyecto ya existente
                         </p>
-                        </article>
-                        </section>
-                        <section>
-                            <h2>Crea una cuenta gratuita.</h2>
-                            <p>
-                                Finalmente, solo habrá que llenar un pequeño formulario con los siguientes datos:
-                                Nombre de usuario.
-                                Dirección email.
-                                Contraseña.
-                                Confirmar contraseña.
-                            </p>
-                            <img src="./img/github.png" height="300px" width="300px">
-                        </section>
-                        <section>
-                            <h2>Crea un Repositorio.</h2>
-                            <p>
-                                Crea tu propio repositorio para compartir tu código a la comunidad.
-                            </p>
-                            <img src="./img/repositorio.png" height="300px" width="300px">
+                    </article>
+                </section>
+                <section>
+                    <h2>Crea una cuenta gratuita.</h2>
+                    <p>
+                        Finalmente, solo habrá que llenar un pequeño formulario con los siguientes datos:
+                        Nombre de usuario.
+                        Dirección email.
+                        Contraseña.
+                        Confirmar contraseña.
+                    </p>
+                    <img src="./img/github.png" height="300px" width="300px">
+                </section>
+                <section>
+                    <h2>Crea un Repositorio.</h2>
+                    <p>
+                        Crea tu propio repositorio para compartir tu código a la comunidad.
+                    </p>
+                    <img src="./img/repositorio.png" height="300px" width="300px">
 
-                            <h3><a
-                                href="https://conociendogithub.readthedocs.io/en/latest/data/dinamica-de-uso/">Ver mas sobre Github
-                                </a>
-                        </h3>
-                        </section>
+                    <h3><a href="https://conociendogithub.readthedocs.io/en/latest/data/dinamica-de-uso/">Ver mas sobre
+                            Github
+                        </a>
+                    </h3>
+                </section>
 
-                        <pre>
-Bibliografía: Conociendogithub.readthedocs.io. 2021. Documentación - 
-Conociendo GitHub — Conociendo GitHub 0.1 documentation. [online] 
-Recuperado de: https://conociendogithub.readthedocs.io/en/latest/ 
-[Accessed 13 February 2021].
-                        </pre>
+                <p>
+                    Bibliografía: Conociendogithub.readthedocs.io. 2021. Documentación -
+                    Conociendo GitHub — Conociendo GitHub 0.1 documentation. [online]
+                    Recuperado de: https://conociendogithub.readthedocs.io/en/latest/
+                    [Accessed 13 February 2021].
+                </p>
             </td>
-            <td class="columna1">
+            <td class="col3">
                 <aside class="scrollgithub">
 
                     <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by
@@ -117,7 +125,7 @@ Recuperado de: https://conociendogithub.readthedocs.io/en/latest/
                 </aside>
             </td>
         </tr>
-        </table>
+    </table>
 
 
 
@@ -132,7 +140,8 @@ Recuperado de: https://conociendogithub.readthedocs.io/en/latest/
                     <a href="https://www.instagram.com/universidadunad/" target="_black">
                         <img class="imgheader" src="./img/redsocial/2.png" height="60" width="60">
                     </a>
-                    <a href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQEv1mLrX6zb9gAAAXdmJydQLA7A0nxy7IFRZ87pLjQs9GB3dnU0gd-w2zf2y4C85gK-Ra9lRP4ljGkxTSTz2PP5KrOAiqipNkUXTqHBWzFAE4TdScAveUeWkluGXUGk6rfFTRw=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Funiversidadunad%2F" target="_black">
+                    <a href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQEv1mLrX6zb9gAAAXdmJydQLA7A0nxy7IFRZ87pLjQs9GB3dnU0gd-w2zf2y4C85gK-Ra9lRP4ljGkxTSTz2PP5KrOAiqipNkUXTqHBWzFAE4TdScAveUeWkluGXUGk6rfFTRw=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Funiversidadunad%2F"
+                        target="_black">
                         <img class="imgheader" src="./img/redsocial/3.png" height="60" width="60">
                     </a>
                     <a href="https://twitter.com/UniversidadUNAD" target="_black">
@@ -145,6 +154,7 @@ Recuperado de: https://conociendogithub.readthedocs.io/en/latest/
             </address>
         </div>
     </footer>
+    <script src ="./js/mijs.js"></script>
 </body>
 
 </html>

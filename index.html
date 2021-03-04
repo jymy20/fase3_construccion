@@ -11,16 +11,17 @@
 
 <body>
 
-    <div class="barralateral">
+    <div class="barralateral" id="menu">
 
+        <button class="btnmenu" onclick="FuntionMenu()">X</button>
         <header>
             <figure>
                 <img class="imgheader" src="./img/logo-unad.png">
-
-                <!-- <figcaption>Exposición de un T-Rex en el museo de la Universidad de Manchester.</figcaption> -->
             </figure>
-        </header>
 
+            
+        </header>
+       
         <nav>
             
             <ul>
@@ -39,14 +40,22 @@
                         <li><a href="documentos.html">Documentos</a></li>
                     </ul>
                 </li>
-                <li><a href="autoevaluacion.html">Autoevaluación</a></li>
+                <li><a>Autoevaluación</a>
+                    <ul>
+                        <li><a href="actividad1.html">Actividad 1</a></li>
+                        <li><a href="actividad2.html">Actividad 2</a></li>
+                    </ul>
+                </li>
                 <li><a href="autor.html">Autor</a></li>
 
             </ul>
         </nav>
+
+        
     </div>
 
     <header id="main-header" class="cabecera">
+        <button onclick="FuntionMenu()">Menu</button>
         <div class="titulo-cabecera">
             <h1>Git Y GitHub</h1>
             <label>sitio web OVI </label>
@@ -56,8 +65,10 @@
 
     <table>
         <tr>
-            <td class="columna1"></td>
-            <td class="columna">
+            <td class="col1">
+               
+            </td>
+            <td class="col2">
                 <section>
                     <article>
                         <h2 class="titulos">Objetivo general</h2>
@@ -113,7 +124,7 @@
                     </section>
 
                     </td>
-            <td class="columna1">
+            <td class="col3">
                 <aside class="scroll">
                 
                     <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -149,6 +160,7 @@
             </address>
         </div>
     </footer>
+    <script src ="./js/mijs.js"></script>
 </body>
 
 </html>
