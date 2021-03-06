@@ -211,7 +211,7 @@ aside {
 
 .scrollvideo {
     width: 260px;
-    height: 2800px;
+    height: 1900px;
     background: gray;
     overflow: scroll;
 }
@@ -236,6 +236,13 @@ aside {
     background: gray;
     overflow: scroll;
 }
+
+    /* actividades */
+    .activity {
+        width: 600px;
+        height: 680px;
+
+    }
 
 /* Autor */
 .imgautor {
@@ -719,7 +726,126 @@ aside {
 }
 
 /* Para 480px */
-@media only screen and (max-width: 500px) and (min-width: 341px) {}
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+           /* menu */
+           .imgheader {
+            padding-right: 10px;
+            width: 60px;
+        }
+    
+        .barralateral {    
+            width: 140px;
+        }
+    
+        .barralateral li ul a{
+            font-size: 12px;
+        }
+    
+        .barralateral a{
+            font-size: 14px;
+        }
+
+        .titulo-cabecera {
+            margin: auto;
+            display: block;
+            text-align: center;
+            padding-top: 10px;
+        }
+    
+        /*style scroolGIT */
+        .scroll {
+            display: none;
+        }
+    
+        .scrollgit {
+           display: none;
+    
+        }
+    
+        .scrollgithub {
+            display: none;
+        }
+    
+        .scrollvideo {
+            display: none;
+        }
+    
+        .scrolldocumentos {
+            display: none;
+        }
+    
+        .scrollactividad {
+            display: none;
+        }
+    
+        .scrollautor {
+            display: none;
+        }
+    
+        /* pie de pagina */
+    
+        footer a {
+            display: inline-block;
+            padding: 10px;
+        }
+        footer {
+    
+            height: 110px;
+            
+        }
+    
+        .piepagina {
+            margin-left: 0px;
+
+          
+        }
+    
+        .iconfooter img {
+            width: 24px;
+            height: 24px;
+
+           
+        }
+    
+    
+        /* informacion central */
+        .col1 {
+            width: 20%;
+        }
+    
+        .col2 {
+            width: 70%;
+        }
+    
+        .col3 {
+            width: 10%;
+        }
+    
+        .parrafo {
+    
+            width: 240px;
+    
+        }
+    
+        /* actividades */
+        .activity {
+            width: 300px;
+            height: 380px;
+    
+        }
+    
+        /* Autor */
+        .imgautor {
+            height: 120px;
+            width: 120px;
+        }
+    
+        /* documentos */
+        .imgdocument {
+            width: 150px;
+            height: 150px;
+        }
+}
 
 /* Para 320px */
 @media only screen and (max-width: 340px) and (min-width: 5px) {}
