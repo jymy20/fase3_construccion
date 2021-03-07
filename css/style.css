@@ -162,6 +162,14 @@ nav ul li ul {
     word-break: break-all;
 }
 
+.parrafo1 {
+
+    width: 800px;
+    text-align: justify;
+    padding: 10px;
+    word-break: break-all;
+}
+
 /* .alinear{
     margin-left: 20px;
 } */
@@ -232,6 +240,13 @@ aside {
 
 .scrollautor {
     width: 200px;
+    height: 600px;
+    background: gray;
+    overflow: scroll;
+}
+
+.scrollevalucion {
+    width: 180px;
     height: 600px;
     background: gray;
     overflow: scroll;
@@ -314,6 +329,13 @@ aside {
         overflow: scroll;
     }
 
+    .scrollevalucion {
+        width: 180px;
+        height: 600px;
+        background: gray;
+        overflow: scroll;
+    }
+
     /* pie de pagina */
 
     .iconfooter img {
@@ -339,6 +361,11 @@ aside {
 
         width: 470px;
 
+    }
+
+    .parrafo1 {
+
+        width: 650px;
     }
 
     /* actividades */
@@ -417,6 +444,13 @@ aside {
         overflow: scroll;
     }
 
+    .scrollevalucion {
+        width: 180px;
+        height: 600px;
+        background: gray;
+        overflow: scroll;
+    }
+
     /* pie de pagina */
 
     footer {
@@ -448,6 +482,11 @@ aside {
 
         width: 350px;
 
+    }
+
+    .parrafo1 {
+
+        width: 650px;
     }
 
     /* actividades */
@@ -539,6 +578,20 @@ aside {
         overflow: scroll;
     }
 
+    .scrollevalucion {
+        width: 180px;
+        height: 600px;
+        background: gray;
+        overflow: scroll;
+    }
+
+    .scrollevalucion {
+        width: 180px;
+        height: 600px;
+        background: gray;
+        overflow: scroll;
+    }
+
     /* pie de pagina */
 
     footer {
@@ -573,9 +626,11 @@ aside {
     }
 
     .parrafo {
-
         width: 300px;
+    }
 
+    .parrafo1 {
+        width: 450px;
     }
 
     /* actividades */
@@ -666,6 +721,22 @@ aside {
         overflow: scroll;
     }
 
+    .scrollautor {
+        width: 150px;
+        height: 500px;
+        background: gray;
+        overflow: scroll;
+    }
+
+    .scrollevalucion {
+        width: 150px;
+        height: 600px;
+        background: gray;
+        overflow: scroll;
+    }
+
+    
+
     /* pie de pagina */
 
     footer {
@@ -703,6 +774,10 @@ aside {
 
         width: 320px;
 
+    }
+
+    .parrafo1 {
+        width: 420px;
     }
 
     /* actividades */
@@ -781,6 +856,10 @@ aside {
         .scrollautor {
             display: none;
         }
+
+        .scrollevalucion {
+            display: none;
+        }
     
         /* pie de pagina */
     
@@ -821,10 +900,12 @@ aside {
             width: 10%;
         }
     
-        .parrafo {
-    
+        .parrafo { 
             width: 240px;
-    
+        }
+
+        .parrafo1 {
+            width: 280px;
         }
     
         /* actividades */
@@ -848,4 +929,129 @@ aside {
 }
 
 /* Para 320px */
-@media only screen and (max-width: 340px) and (min-width: 5px) {}
+@media only screen and (max-width: 340px) and (min-width: 5px) {
+               /* menu */
+               .imgheader {
+                padding-right: 10px;
+                width: 60px;
+            }
+        
+            .barralateral {    
+                width: 140px;
+            }
+        
+            .barralateral li ul a{
+                font-size: 12px;
+            }
+        
+            .barralateral a{
+                font-size: 14px;
+            }
+    
+            .titulo-cabecera {
+                margin: auto;
+                display: block;
+                text-align: center;
+                padding-top: 10px;
+            }
+        
+            /*style scroolGIT */
+            .scroll {
+                display: none;
+            }
+        
+            .scrollgit {
+               display: none;
+        
+            }
+        
+            .scrollgithub {
+                display: none;
+            }
+        
+            .scrollvideo {
+                display: none;
+            }
+        
+            .scrolldocumentos {
+                display: none;
+            }
+        
+            .scrollactividad {
+                display: none;
+            }
+        
+            .scrollautor {
+                display: none;
+            }
+    
+            .scrollevalucion {
+                display: none;
+            }
+        
+            /* pie de pagina */
+        
+            footer a {
+                display: inline-block;
+                padding: 5px;
+            }
+            footer {
+        
+                height: 110px;
+                
+            }
+        
+            .piepagina {
+                margin-left: 0px;
+    
+              
+            }
+        
+            .iconfooter img {
+                width: 24px;
+                height: 24px;
+    
+               
+            }
+        
+        
+            /* informacion central */
+            .col1 {
+                width: 20%;
+            }
+        
+            .col2 {
+                width: 70%;
+            }
+        
+            .col3 {
+                width: 10%;
+            }
+        
+            .parrafo { 
+                width: 200px;
+            }
+    
+            .parrafo1 {
+                width: 230px;
+            }
+        
+            /* actividades */
+            .activity {
+                width: 250px;
+                height: 380px;
+        
+            }
+        
+            /* Autor */
+            .imgautor {
+                height: 120px;
+                width: 120px;
+            }
+        
+            /* documentos */
+            .imgdocument {
+                width: 150px;
+                height: 150px;
+            }
+}
