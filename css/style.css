@@ -21,7 +21,7 @@ body {
     margin: auto;
     display: block;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 /* pie de pagina */
@@ -269,6 +269,24 @@ aside {
 .imgdocument {
     width: 150px;
     height: 150px;
+}
+
+.section-fondo{
+    /* border-top-left-radius: 200px 100px; */
+        /* The image used */
+    background-image: url("../img/fondo.jpg");
+
+    /* Set a specific height */
+    min-height: 200px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transform: skewY(-3deg); */
+    filter: grayscale(80%);
+    
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 981px) {
